@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>angular js</title>
+		<meta charset="utf-8">
+        <meta http-equiv="content-language" content="fr">
+        <meta http-equiv="cache-control" content="no-cache" />
+        <link rel="stylesheet" type="text/css" href="css/index.style.css">
+        <link rel="stylesheet" type="text/css" href="css/aceuil.style.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.style.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/loding.sryle.css">
+        
+        <script src="angular/angular.js"></script>
+        <script src="angular/angular-route.js"></script>
+        <script src="angular/Chart.js"></script>
+        <script src="angular/angular-chart.js"></script>
+        <script src="js/Exercice.js"></script>
+	</head>
+	<body  ng-app="app">
+        <nav class="menu">
+            <ul>
+                <li><a href="#/aceuil">aceuil</a></li>
+                <li><a href="#/contact">contact</a></li>
+                <li><a href="#/help">help</a></li>
+            </ul>
+            <div class="sous-menu">
+            </div>
+        </nav>
+        <div ng-view class="container">
+        </div>
+	</body>
+</html>

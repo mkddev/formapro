@@ -1,0 +1,33 @@
+<h1>aceuil</h1>
+<div class="filtre">
+    <input type="text" ng-model="query" class="chercher1" ng-bind="chercher()"><br>
+    <!--
+    <select ng-model="order" class="chercher2">
+         <option value="nom">nom</option>
+         <option value="pre">prénom</option>
+    </select>
+    -->
+</div>
+<div>
+    <!--
+    <article ng-repeat="person in listes">
+        <strong>{{person.id}}</strong>
+        <p>nom : {{person.nom}}</p>
+        <p>prénom : {{person.prenom}}</p>
+        <p>Email : {{person.email}}</p>
+        <p>Tele : {{person.phone}}</p>
+        <hr>
+    </article>
+    -->
+    <div>
+        <article ng-show="showArticle" class="unArticle">
+            <label>ID : </label><input type="text" value={{itemListes.id}} ><br>
+            <label>nom : </label><input type="text" value={{itemListes.nom}} ><br>
+            <label>prénom : </label><input type="text" value={{itemListes.prenom}} ><br>
+            <label>Email : </label><input type="text" value={{itemListes.email}} ><br>
+            <label>Tele : </label><input type="text" value={{itemListes.phone}} >
+        </article>
+        
+        <div ng-show="showArticleErreur" class="articleErreur">{{errorArticle}}</div>
+    </div>
+</div>

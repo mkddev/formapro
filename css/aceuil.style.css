@@ -1,0 +1,25 @@
+.unArticle
+{
+    padding: 10px;
+}
+.unArticle > label
+{
+    width: 200px;
+    display: inline-block;
+}
+.unArticle > input[type="text"]
+{
+    padding: 6px 20px;
+    display: inline-block;
+    width: 300px;
+    margin-top: 15px;
+}
+.articleErreur
+{
+    padding: 10px;
+    background-color: #f2dede;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
